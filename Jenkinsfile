@@ -13,14 +13,14 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''#!/bin/bash
-                sudo /home/ec2-user/environment/mlops_lab_10/venv/bin/pytest
+                sudo /home/ec2-user/environment/mlops_lab_10/.venv/bin/pytest
                 
                 # TODO fill out the path to conda here
-                # sudo /home/ec2-user/environment/mlops_lab_10/venv/bin/activate
+                # sudo /home/ec2-user/environment/mlops_lab_10/.venv/bin/activate
                 # sudo /PATH/TO/CONDA init
 
                 # TODO Complete the command to run pytest
-                # sudo /home/ec2-user/environment/mlops_lab_10/venv/bin/python pytest
+                # sudo /home/ec2-user/environment/mlops_lab_10/.venv/bin/python pytest
 
                 # echo 'pytest not runned'
                 # exit 1 #comment this line after implementing Jenkinsfile
